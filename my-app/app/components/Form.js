@@ -38,13 +38,13 @@ export default function Form() {
     }
 
     return (
-        <section className='my-[5%] mx-[5%] bg-violet-800 border-solid border-2 border-sky-500 h-[90%] w-[90%]'>
+        <section className='dark:bg-black'>
+                    <form className='my-[5%] mx-[5%] bg-violet-800 border-solid border-2 border-sky-500 h-[90%] w-[90%]' onSubmit={onSubmitHandler}>
             <section>
-                <h2 className='text-center font-bold '>
+                <h2 className='text-center font-bold pt-4'>
                     Create Cookie Stand
                 </h2>
             </section>
-                    <form onSubmit={onSubmitHandler}>
                         <section className='m-5'>
                             <span className='m-1'>Location</span>
                             <input 
@@ -103,10 +103,7 @@ export default function Form() {
                                     </div>
                                 </section>
                             </section>
-
-                            <section className="mx-[36%] my-2 bg-violet-500 border w-[31%] h-[35px] border-2 border-violet-900 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 grid justify-center">
-                                <button>Create</button>
-                            </section>
+                                <button className="mx-[36%] my-2 bg-violet-500 border w-[31%] h-[35px] border-2 border-violet-900 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 grid justify-center">Create</button>
                         </section>
                     </form>
 
